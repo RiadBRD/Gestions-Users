@@ -39,7 +39,7 @@ public class UtilisateurController {
         return ResponseEntity.ok(utilisateur);
     }
 
-    @PostMapping()
+    @PostMapping("/utilisateurs")
     public ResponseEntity<Utilisateur> ajouterUtilisaateur(@RequestBody Utilisateur entity) {
         Utilisateur utilisateur = utilisateurRepository.save(entity);
         return ResponseEntity.ok(utilisateur);
